@@ -1,6 +1,6 @@
 import ListGroup from "./components/ListGroup";
 import Button from "./components/Button";
-
+import Card from "./components/Card";
 function App() {
   let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
   const handleSelectItem = (item: string) => {
@@ -16,6 +16,7 @@ function App() {
         heading="Cities"
         onSelectItem={handleSelectItem}
       />
+      <Card></Card>
     </div>
   );
 }
