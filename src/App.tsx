@@ -9,14 +9,21 @@ function App() {
   return (
     <div>
       <Button color="primary" onClick={() => console.log("Clicked")}>
-        Press for Alert
+        CSS
       </Button>
-      <ListGroup
-        items={items}
-        heading="Cities"
-        onSelectItem={handleSelectItem}
-      />
-      <Card></Card>
+      <Button color="primary" onClick={() => console.log("Clicked")}>
+        JavaScript
+      </Button>
+      <Button color="primary" onClick={() => console.log("Clicked")}>
+        HTML
+      </Button>
+      <Button color="primary" onClick={() => console.log("Clicked")}>
+        GitHub
+      </Button>
+      <Card title="CSS">Info on CSS</Card>
+      <Card title="JavaScript">Info on CSS</Card>
+      <Card title="HTML">Info on CSS</Card>
+      <Card title="Github">Info on CSS</Card>
     </div>
   );
 }

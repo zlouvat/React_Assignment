@@ -3,17 +3,15 @@ import { ReactNode } from "react";
 interface Props {
   children: ReactNode;
   onClick: () => void;
+  title: string;
 }
 
-const Card = ({ children, onClick }: Props) => {
+const Card = ({ children, onClick, title }: Props) => {
   return (
     <div className="card" onClick={onClick}>
       <div className="card-body">
-        <h5 className="card-title">Card title</h5>
+        <h2 className="card-title">{title}</h2>
         <p className="card-text">{children}</p>
-        <a href="#" className="btn btn-primary">
-          Go somewhere
-        </a>
       </div>
     </div>
   );
