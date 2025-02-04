@@ -3,24 +3,19 @@ import { ReactNode } from "react";
 interface Props {
   children: ReactNode;
   onClose: () => void;
+  link: string;
   title: string;
 }
 
-const Card = ({ children, onClose, title }: Props) => {
+const Card = ({ children, onClose, link, title }: Props) => {
   return (
-    <div className="card">
+    <div className="card" onClick={onClose}>
       <div className="card-body">
-        <h2 className="card-title">
-          {title}
-          <button
-            type="button"
-            onClick={onClose}
-            className="btn-close"
-            data-bs-dismiss="alert"
-            aria-label="Close"
-          ></button>
-        </h2>
+        <h5 className="card-title">{title}</h5>
         <p className="card-text">{children}</p>
+        <a href="#" className="btn btn-primary">
+          {link}
+        </a>
       </div>
     </div>
   );
