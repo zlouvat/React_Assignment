@@ -26,22 +26,37 @@ function App() {
       </Button>
       {cssVisible && (
         <Card onClose={() => setCSSVisibility(false)} title="CSS">
-          Info on CSS
+          <h3>Info on JavaScript</h3>
+          CSS are Cascading Style Sheets <br />
+          thatallow the user to style HTML <br />
+          in any possible way they imagine
         </Card>
       )}
       {javaScriptVisible && (
         <Card onClose={() => setJavaScriptVisibility(false)} title="JavaScript">
-          Info on JavaScript
+          <h3>Info on JavaScript</h3>
+          JavaScript are scripts for HTML <br />
+          webpages that allow the developer to
+          <br />
+          create programs to automatically format <br />
+          HTML
         </Card>
       )}
       {htmlVisible && (
         <Card onClose={() => setHTMLVisibility(false)} title="HTML">
-          Info on HTML
+          <h3>Info on HTML</h3>
+          HTML is a coding language <br />
+          used to structure a website and the <br />
+          content that the developer chooses
         </Card>
       )}
       {gitVisible && (
         <Card onClose={() => setGitVisibility(false)} title="GitHub">
-          Info on GitHub
+          <h3>Info on GitHub</h3>
+          allows users to create and collaborate <br />
+          on files or code from across the world. <br />
+          Edits and changes can be made from multiple <br />
+          users to the same files
         </Card>
       )}
     </div>
